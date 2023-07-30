@@ -22,12 +22,12 @@ IPs are also released after a certain expire amount of time.
 
 #### With Composer
 
-Add this plugin `dsoares/rcguard` to the `require` section of your Roundcube
+Add this plugin `pbiering/rcguard` to the `require` section of your Roundcube
 `composer.json`, run composer update and enable rcguard in the main Roundcube
 configuration file.
 <br>OR just run:
 
-    composer require dsoares/rcguard
+    composer require pbiering/rcguard
 
 Copy `config.inc.php.dist` to `config.inc.php` and modify as necessary.
 
@@ -76,19 +76,24 @@ Since March 2023, support for Cloudflare Turnstile was added
 
 ## Contact
 
-The original author of this plugin was [Denny Lin][dennylin]. I forked it some
-years ago to 1) use reCAPTCHA v2.0, 2) add the larry skin and 3) because the project
+The original author of this plugin was [Denny Lin][dennylin].
+
+[Diana Soares][dsoares] forked
+it some years ago to 1) use reCAPTCHA v2.0, 2) add the larry skin and 3) because the project
 issues were taking too long to be answered. Also, the original project was not
 updated since 2015 and many things have changed in the meantime in Roundcube's API.
 
+[Peter Bieringer][pbiering] forked it 2022 from [Diana Soares][dsoares] to add additional
+Capatcha services.
+
+Because of the former fork went also stale (https://github.com/dsoares/roundcube-rcguard/issues/50),
 I will maintain this project because i need it working with the latest
 version of Roundcube.
 
-Comments and suggestions are welcome (preferentially via issues).
+Comments and suggestions are welcome via "issues".
 
-Email: [Diana Soares][email]
-
-[email]: mailto:diana.soares@gmail.com
+[pbiering]: https://github.com/pbiering
+[dsoares]: https://github.com/dsoares
 [dennylin]: https://github.com/dennylin93
 [recaptcha-doc]: https://developers.google.com/recaptcha/intro
 [hcaptcha-doc]: https://docs.hcaptcha.com/
@@ -100,6 +105,10 @@ Email: [Diana Soares][email]
 
 This plugin is distributed under the GPL-3.0+ license.
 
-This plugin also contains PHP libraries for reCAPTCHA, hCaptcha and FriendlyCaptcha that is
-distributed under its own license. See the library files for the exact details.
+This plugin also contains PHP libraries for
+- reCAPTCHA
+- hCaptcha
+- FriendlyCaptcha
+- Cloudflare Turnstile
+that are distributed under its own licenses. See the library files for the exact details.
 
