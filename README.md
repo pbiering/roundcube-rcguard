@@ -86,7 +86,7 @@ updated since 2015 and many things have changed in the meantime in Roundcube's A
 [Peter Bieringer][pbiering] forked it 2022 from [Diana Soares][dsoares] to add additional
 Captcha services.
 
-Because of the former fork went also stale (https://github.com/dsoares/roundcube-rcguard/issues/50),
+Because of the former fork went also stale in 2021 (https://github.com/dsoares/roundcube-rcguard/issues/50),
 I will maintain this project because i need it working with the latest
 version of Roundcube.
 

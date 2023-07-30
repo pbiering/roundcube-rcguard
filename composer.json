@@ -1,16 +1,16 @@
 {
-    "name": "dsoares/rcguard",
+    "name": "pbiering/rcguard",
     "type": "roundcube-plugin",
-    "description": "Roundcube plugin that enforces reCAPTCHA for users that have too many failed logins",
+    "description": "Roundcube plugin that enforces requirement of solving a Captcha during login",
     "keywords": ["mail","roundcube","security","captcha"],
-    "homepage": "https://github.com/dsoares/roundcube-rcguard",
-    "version": "1.3.2",
+    "homepage": "https://github.com/pbiering/roundcube-rcguard",
+    "version": "1.4.0",
     "license": "GPL-3.0+",
     "authors": [
         {
-            "name": "Diana Soares",
-            "email": "diana.soares@gmail.com",
-            "homepage": "https://github.com/dsoares",
+            "name": "Peter Bieringer",
+            "email": "pb@bieringer.de",
+            "homepage": "https://github.com/pbiering",
             "role": "Developer"
         }
     ],

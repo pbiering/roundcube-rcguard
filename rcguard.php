@@ -2,12 +2,13 @@
 /**
  * Roundcube rcguard plugin.
  *
- * Roundcube plugin to provide Google reCAPTCHA service to Roundcube.
+ * Roundcube plugin to provide Captcha protection to Roundcube login forms.
  *
- * @version 1.3.2
- * @author Diana Soares
+ * @version 1.4.0
+ * @author Peter Bieringer
  *
- * Copyright (c) Diana Soares. All rights reserved.
+ * Copyright (c) 2022+     Peter Bieringer. All rights reserved.
+ * Copyright (c) 2015-2021 Diana Soares. All rights reserved.
  * Copyright (c) 2010-2012 Denny Lin. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
