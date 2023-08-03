@@ -9,6 +9,15 @@ too high. It provides protection against automated attacks.
 Failed attempts are logged by IP and stored in a database table.
 IPs are also released after a certain expire amount of time.
 
+## Sources
+
+### Repositories
+
+- GitHub: https://github.com/pbiering/roundcube-rcguard
+
+### Registrations
+
+- Packagist: https://packagist.org/packages/pbiering/rcguard
 
 ## Installation
 
@@ -87,8 +96,7 @@ updated since 2015 and many things have changed in the meantime in Roundcube's A
 Captcha services.
 
 Because of the former fork went also stale in 2021 (https://github.com/dsoares/roundcube-rcguard/issues/50),
-I will maintain this project because i need it working with the latest
-version of Roundcube.
+[Peter Bieringer][pbiering] will maintain this project now.
 
 Comments and suggestions are welcome via "issues".
 
@@ -110,5 +118,6 @@ This plugin also contains PHP libraries for
 - hCaptcha
 - FriendlyCaptcha
 - Cloudflare Turnstile
+
 that are distributed under its own licenses. See the library files for the exact details.
 
