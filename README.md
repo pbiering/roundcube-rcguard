@@ -9,7 +9,7 @@ too high. It provides protection against automated attacks.
 Failed attempts are logged by IP and stored in a database table.
 IPs are also released after a certain expire amount of time.
 
-Since 2024-01-01 the default config is set to awalys activate CAPTCHA verification by
+Since 2024-01-01 the default config is set to always activate CAPTCHA verification by
 
 `$config['failed_attempts'] = 0;`
 
@@ -24,14 +24,6 @@ Since 2024-01-01 the default config is set to awalys activate CAPTCHA verificati
 - Packagist: https://packagist.org/packages/pbiering/rcguard
 
 ## Installation
-
-<big>**IMPORTANT: This plugin requires CAPTCHA API keys to work properly.**</big>
-<br>These can be obtained from:
-- Google reCAPTCHA: https://www.google.com/recaptcha
-- hCaptcha: https://dashboard.hcaptcha.com/
-- FriendlyCaptcha: https://friendlycaptcha.com/
-- Cloudflare Turnstile: https://www.cloudflare.com/products/turnstile/
-
 
 ### With Composer
 
@@ -67,6 +59,13 @@ the table `rcguard` accordingly.
 
 
 ### Customizing CAPTCHA
+
+<big>**IMPORTANT: This plugin requires CAPTCHA API keys to work properly.**</big>
+<br>These can be obtained from:
+- Google reCAPTCHA: https://www.google.com/recaptcha
+- hCaptcha: https://dashboard.hcaptcha.com/
+- FriendlyCaptcha: https://friendlycaptcha.com/
+- Cloudflare Turnstile: https://www.cloudflare.com/products/turnstile/
 
 You may customize the following in the `config.inc.php` file:
 
