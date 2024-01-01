@@ -1,4 +1,4 @@
-# Roundcube plugin rcguard
+# Roundcube webmail plugin "rcguard"
 
 ## Introduction
 
@@ -8,6 +8,10 @@ too high. It provides protection against automated attacks.
 
 Failed attempts are logged by IP and stored in a database table.
 IPs are also released after a certain expire amount of time.
+
+Since 2024-01-01 the default config is set to awalys activate CAPTCHA verification by
+
+`$config['failed_attempts'] = 0;`
 
 ## Sources
 
@@ -29,7 +33,7 @@ IPs are also released after a certain expire amount of time.
 - Cloudflare Turnstile: https://www.cloudflare.com/products/turnstile/
 
 
-#### With Composer
+### With Composer
 
 Add this plugin `pbiering/rcguard` to the `require` section of your Roundcube
 `composer.json`, run composer update and enable rcguard in the main Roundcube
@@ -38,12 +42,21 @@ configuration file.
 
     composer require pbiering/rcguard
 
-Copy `config.inc.php.dist` to `config.inc.php` and modify as necessary.
+### Manually
 
-#### Manually
+#### Installation
 
-Place the contents of this directory under `plugins/rcguard` and enable rcguard
-in the main Roundcube configuration file.
+Place the contents of this directory under `plugins/rcguard`.
+
+#### Activation
+
+Enable rcguard in the main Roundcube configuration file (e.g. `/etc/roundcubemail/config.inc.php`)
+by extension of the plugin config array:
+
+`array_push($config['plugins'], 'rcguard');`
+
+
+## Configuration
 
 Copy `config.inc.php.dist` to `config.inc.php` and modify as necessary.
 
@@ -53,13 +66,19 @@ rcguard. The table should be created in the database used by Roundcube.
 the table `rcguard` accordingly.
 
 
-## Customizing CAPTCHA
+### Customizing CAPTCHA
 
 You may customize the following in the `config.inc.php` file:
 
 - the API version: `v3`, `v2invisible`, `v2`, `v2hcaptcha` or `v2friendlycaptcha` or `v2cfturnstile`;
+ by `$config['recaptcha_api_version']`
+  - also configure per selected service required `$config['recaptcha_api_url']`, `$config['recaptcha_publickey']`, `$config['recaptcha_privatekey']`
+
 - the v2 widget theme: `light` or `dark` (where supported);
+ by `$config['recaptcha_theme']'
+
 - the v2 widget size: `normal` or `compact` (where supported).
+ by `$config['recaptcha_size']`
 
 For more information about the widget please check:
 - [documentation about reCAPTCHA][recaptcha-doc]
