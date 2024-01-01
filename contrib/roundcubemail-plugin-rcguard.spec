@@ -1,5 +1,5 @@
 #
-# Fedora/Enterprise Linux spec file for roundcubemail
+# Fedora/Enterprise Linux spec file for Roundcube webmail plugin "rcguard"
 #
 
 # manual build
@@ -12,7 +12,7 @@ Name: roundcubemail-plugin-rcguard
 BuildArch: noarch
 Version:   1.4.0
 Release:   1
-Summary:   CAPTCHA plugin for Round Cube Webmail
+Summary:   CAPTCHA plugin for Roundcube webmail
 License:   GPLv3+
 URL:       https://github.com/pbiering/roundcube-rcguard/
 Group:     Unspecified
@@ -22,11 +22,11 @@ Source0:        https://github.com/pbiering/roundcube-rcguard/archive/%{version}
 
 
 %description
-CAPTCHA plugin for roundcubemail, supportd
-    Google reCAPTCHA: https://www.google.com/recaptcha
-    hCaptcha: https://dashboard.hcaptcha.com/
-    FriendlyCaptcha: https://friendlycaptcha.com/
-    Cloudflare Turnstile: https://www.cloudflare.com/products/turnstile/
+CAPTCHA plugin for Roundcube webmail, supporting
+- Google reCAPTCHA: https://www.google.com/recaptcha
+- hCaptcha: https://dashboard.hcaptcha.com/
+- FriendlyCaptcha: https://friendlycaptcha.com/
+- Cloudflare Turnstile: https://www.cloudflare.com/products/turnstile/
 
 
 %prep
