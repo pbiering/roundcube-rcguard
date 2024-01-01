@@ -3,8 +3,8 @@
  * rcguard configuration file.
  */
 
-// Number of failed logins before CAPTCHA is shown
-$config['failed_attempts'] = 3;
+// Number of failed logins before CAPTCHA is shown (0: shows always CAPTCHA, strongly recommended)
+$config['failed_attempts'] = 0;
 
 // Release IP after how many minutes (after last failed attempt)
 $config['expire_time'] = 30;
