@@ -36,11 +36,17 @@ configuration file.
 
 ### Manually
 
-#### Installation
-
 Place the contents of this directory under `plugins/rcguard`.
 
-#### Activation
+### Fedora/EL via RPM
+
+until provided by Fedora or EPEL: available via Copr: https://copr.fedorainfracloud.org/coprs/pbiering/InternetServerExtensions/packages/
+
+```
+yum install roundcubemail-plugin-rcguard
+```
+
+## Activation
 
 Enable rcguard in the main Roundcube configuration file (e.g. `/etc/roundcubemail/config.inc.php`)
 by extension of the plugin config array:
@@ -56,6 +62,13 @@ Use the files under `SQL/` to create the database schema required for
 rcguard. The table should be created in the database used by Roundcube.
 **NOTE**: If you use the Roundcube `db_prefix` config option, you must rename
 the table `rcguard` accordingly.
+
+Example for SQLite:
+
+```
+cd /usr/share/roundcubemail/plugins/rcguard
+cat SQL/sqlite.initial.sql | sqlite3 /var/lib/roundcubemail/db/sqlite.db
+```
 
 
 ### Customizing CAPTCHA
