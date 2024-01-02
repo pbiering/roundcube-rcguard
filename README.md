@@ -75,10 +75,10 @@ cat SQL/sqlite.initial.sql | sqlite3 /var/lib/roundcubemail/db/sqlite.db
 
 <big>**IMPORTANT: This plugin requires CAPTCHA API keys to work properly.**</big>
 <br>These can be obtained from:
-- Google reCAPTCHA: https://www.google.com/recaptcha
+- Google's reCAPTCHA: https://www.google.com/recaptcha
 - hCaptcha: https://dashboard.hcaptcha.com/
-- FriendlyCaptcha: https://friendlycaptcha.com/
-- Cloudflare Turnstile: https://www.cloudflare.com/products/turnstile/
+- Friendly Captcha: https://friendlycaptcha.com/
+- Cloudflare's Turnstile: https://www.cloudflare.com/products/turnstile/
 
 You may customize the following in the `config.inc.php` file:
 
@@ -93,18 +93,18 @@ You may customize the following in the `config.inc.php` file:
  by `$config['recaptcha_size']`
 
 For more information about the widget please check:
-- [documentation about reCAPTCHA][recaptcha-doc]
+- [documentation about Google's reCAPTCHA][recaptcha-doc]
 - [documentation about hCaptcha][hcaptcha-doc].
-- [documentation about FriendlyCaptcha][friendlycaptcha-doc]
-- [documentation about Cloudflare Turnstile][cfturnstile-doc]
+- [documentation about Friendly Captcha][friendlycaptcha-doc]
+- [documentation about Cloudflare's Turnstile][cfturnstile-doc]
 
 The plugin configuration file has several other options you may configure, please take at look.
 
 Since May 2018, you can define a proxy (anonymous or authenticated) to request the CAPTCHA widget.
 
-Since April 2022, support for hCaptcha and FriendlyCaptcha was added
+Since April 2022, support for hCaptcha and Friendly Captcha was added
 
-Since March 2023, support for Cloudflare Turnstile was added
+Since March 2023, support for Cloudflare's Turnstile was added
 
 
 ## Supported databases
