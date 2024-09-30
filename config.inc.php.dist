@@ -13,7 +13,7 @@ $config['expire_time'] = 30;
 $config['rcguard_reset_after_success'] = true;
 
 // Google reCAPTCHA | hCaptcha | FriendlyCaptcha | Cloudflare Turnstyle API version and url
-$config['recaptcha_api_version'] = 'v2'; // v3 | v2 | v2invisible | v2hcaptcha | v2friendlycaptcha | v2cfturnstyle
+$config['recaptcha_api_version'] = 'v2'; // v3 | v2 | v2invisible | v2hcaptcha | v2friendlycaptcha | v2cfturnstile
 $config['recaptcha_api_url'] = 'https://www.google.com/recaptcha/api.js'; // Google reCAPTCHA
 //$config['recaptcha_api_url'] = 'https://js.hcaptcha.com/1/api.js'; // hCaptcha
 //$config['recaptcha_api_url'] = 'https://cdn.jsdelivr.net/npm/friendly-challenge@0.9.1/widget.min.js'; // FriendlyCaptcha
